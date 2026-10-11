@@ -1,0 +1,14 @@
+{
+  "site_nome": "Meu Site",
+  "site_url": "https://meusite.com.br",
+  "nicho": "descreva aqui o nicho do negócio (ex: estética facial em São Paulo)",
+  "publico": "quem lê o blog (ex: mulheres de 25 a 45 anos interessadas em skincare)",
+  "oferta": "o que você vende e qual o CTA no fim do artigo (ex: agendar avaliação pelo WhatsApp)",
+  "cta_url": "https://wa.me/5511999999999",
+  "tom_de_voz": "próximo, direto, sem jargão, frases curtas",
+  "idioma": "português do Brasil",
+  "palavras_por_artigo": 1500,
+  "artigos_por_execucao": 1,
+  "destino": "markdown",
+  "status_wordpress": "draft"
+}
