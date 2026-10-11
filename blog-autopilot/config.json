@@ -1,6 +1,6 @@
 {
-  "site_nome": "Meu Site",
-  "site_url": "https://meusite.com.br",
+  "site_nome": "Weltrix Ads",
+  "site_url": "https://blog.weltrixads.com.br",
   "nicho": "descreva aqui o nicho do negócio (ex: estética facial em São Paulo)",
   "publico": "quem lê o blog (ex: mulheres de 25 a 45 anos interessadas em skincare)",
   "oferta": "o que você vende e qual o CTA no fim do artigo (ex: agendar avaliação pelo WhatsApp)",
@@ -10,5 +10,6 @@
   "palavras_por_artigo": 1500,
   "artigos_por_execucao": 1,
   "destino": "markdown",
-  "status_wordpress": "draft"
+  "status_wordpress": "draft",
+  "site_principal": "https://weltrixads.com.br"
 }

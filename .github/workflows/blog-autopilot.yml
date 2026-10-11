@@ -1,8 +1,9 @@
 name: blog autopilot
 
 on:
-  schedule:
-    - cron: "17 12 * * 1,3,5"  # seg, qua e sex às 9h17 (horário de brasília)
+  # só pra quem usa a api do claude: descomente pra rodar seg, qua e sex às 9h17 (brasília)
+  # schedule:
+  #   - cron: "17 12 * * 1,3,5"
   workflow_dispatch:
     inputs:
       ideias:

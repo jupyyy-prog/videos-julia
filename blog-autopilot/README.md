@@ -2,6 +2,25 @@
 
 ferramenta própria pra escrever e publicar artigos de blog no automático, otimizados pro google e pra aparecer em respostas de ia (chatgpt, gemini, perplexity). mesma ideia do clickhunt, sem mensalidade: você paga só o uso da api do claude (centavos por artigo).
 
+## blog da weltrix: blog.weltrixads.com.br (cloudflare pages, grátis)
+
+o blog é um site estático gerado por `build.py` a partir da pasta `posts/`. o cloudflare pages refaz o site sozinho a cada commit.
+
+configurar uma vez no cloudflare (https://dash.cloudflare.com):
+
+1. workers & pages → create → pages → connect to git → escolhe o repositório `videos-julia`
+2. production branch: `main`
+3. build command: `pip install markdown && python build.py`
+4. build output directory: `site`
+5. root directory: `blog-autopilot`
+6. depois do primeiro deploy: custom domains → `blog.weltrixads.com.br` (como o domínio já está no cloudflare, o dns é criado sozinho)
+7. no google search console (https://search.google.com/search-console), adiciona o `blog.weltrixads.com.br` e envia o `sitemap.xml`
+
+dois jeitos de escrever os artigos:
+
+- **sem custo**: rotina agendada do claude code seguindo `ROTINA.md` (usa o teu plano do claude)
+- **api do claude**: `autopilot.py` + github actions (centavos por artigo, detalhes abaixo)
+
 ## o que ela faz
 
 - pega a próxima palavra-chave pendente em `keywords.csv`

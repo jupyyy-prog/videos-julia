@@ -205,6 +205,7 @@ def salvar_markdown(cfg, artigo):
         "title": artigo["titulo"],
         "description": artigo["meta_description"],
         "excerpt": artigo["resumo"],
+        "slug": slug,
         "date": date.today().isoformat(),
         "tags": artigo["tags"],
     }
@@ -212,7 +213,7 @@ def salvar_markdown(cfg, artigo):
     texto = "\n".join(linhas) + f"# {artigo['titulo']}\n\n{artigo['conteudo_markdown']}\n\n## Perguntas frequentes\n\n{faq}\n{faq_schema(artigo['faq'])}\n"
     caminho = POSTS / f"{date.today().isoformat()}-{slug}.md"
     caminho.write_text(texto, encoding="utf-8")
-    return f"{cfg['site_url'].rstrip('/')}/blog/{slug}"
+    return f"{cfg['site_url'].rstrip('/')}/{slug}/"
 
 
 def rodar(client, cfg, dry_run):
